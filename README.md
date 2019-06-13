@@ -4,7 +4,7 @@ Creating, editing, updating and deleting content on a website is what makes the 
 
 A user who visits our site will be able to create posts that will be saved in a mysql database, retrieve the posts from the database and display them on the web page. Each post will be displayed with an edit and delete button to permit the user to update posts as well as delete them.
 
-First, create a database named crud. In the crud database, create a table called info. The info table should have the following columns:
+First, create a database named form. In the crud database, create a table called record. The info table should have the following columns:
 i) name
 ii)age
 iii)gender
