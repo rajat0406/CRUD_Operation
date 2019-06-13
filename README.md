@@ -15,21 +15,28 @@ vi)department
 # Technical Tips
 Construct four pages:-
 1. Add user form page
+
 a. Sample Form
 
+
 2. Edit user form page
+
 a. Same form type used for Add user form page
 
+
 3. View Users page
+
 a. list all the users using HTML table
-b. Sample output
-Name Age Gender Email Contact Department
 
 
 4. Search User page
+
 a. Search user based on name and age
+
 b. list all the users with matching name and age using HTML table
+
 c. Sample Search form
+
 Text field for searching Name Text field for searching Age Search button
 
 
