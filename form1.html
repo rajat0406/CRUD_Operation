@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Record</title>
+	<script type="text/javascript" language="javascript" src="jquery.js"></script>
+	<script  type="text/javascript" language="javascript" src="recordValidate.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	body {
+       	margin: 0;
+  		font-family: Arial, Helvetica, sans-serif;
+        }
+		header {
+  background-color: #333;
+  position: relative;
+}
+div.form{
+	background-color: lightgrey;
+	width:550px;
+	height:450px;
+	border: 1px solid black;
+}
+tr{
+	font-size: 20px;
+}
+input{
+	font-size: 20px;
+}
+span.error_form {
+	font-size: 15px;
+	font-family: Arial;
+	color: #FF0052;
+}
+</style>
+</head>
+<body style="background-color: White" style="overflow: scroll; overflow-x: scroll;">
+	<header>
+		<table><tr>
+			<div>
+			<td><img src="studentLogo.jpg" style="width:100px;height:100px;"></td>
+			<td><h1 style = "color: red;font-size: 200%;">Search Student details</h1></td></div></tr>
+		</table>
+	</header>
+	<br><br>
+	<center>
+	<div class="form">
+	<form id="myForm" action="search.php" method="post" >
+	<h2 style = "color: black;text-align: center ; font-size: 250%;">Search</h2>
+	<table style="background-color: White">							
+    <tr><th>Name:</th><td><input type="text" id="name" name="uname" placeholder="Enter your name" required></td><td><span class="error_form" id="name_error_message"></span></td> </tr>
+	<tr><th>Age:</th><td><input type="text"  id="age" name="uage" placeholder="Enter your age" required></td><td><span class="error_form" id="age_error_message"></span></td></tr>
+	</table>
+	<br><br>
+	<button type="submit" name="submit_login" style="background-color: lightBlue;text-align: center; font-size: 20px;width:250px;margin-left: 25px;">extract</button>
+	<!button type="submit" onclick="window.location.href='FirstPage.html'" style="background-color: lightBlue;text-align: center; font-size: 20px;width:250px;">
+	<br><br>
+	<h>New User?</h><br>
+	<button type="submit" onclick="window.location.href='SignUP.html'" style="background-color: Red; font-size: 20px; width:300px">Add your details
+	</button><br><br>
+	<h>Do you want to delete details?</h><br>
+	<button type="submit" onclick="window.location.href='delete.html'" style="background-color: Red; font-size: 20px; width:300px">Delete details</button><br><br>
+	<h>Do you want to update details?</h><br>
+	<button type="submit" onclick="window.location.href='update.html'" style="background-color: Red; font-size: 20px; width:300px">Update details</button>
+	</form>
+	</div>
+	</center>
+</body>
+</html>															
